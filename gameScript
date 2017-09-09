@@ -1,20 +1,23 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image ,VisibleOpacity } from 'react-native';
-
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
+        <Text style={styles.title}>Step Style</Text>
+	<Image source={{uri: 'Buw84ZZCUAAZdwQ'}} style={{width: 40, height: 40}} />
       </View>
     );
   }
 }
 
-
-	
-}
+const styles = StyleSheet.create({
+  title:   {
+    flex: 1,
+    lineHeight: 120,
+    fontSize: 60,
+},
   container: {
     flex: 1,
     backgroundColor: '#fff',
